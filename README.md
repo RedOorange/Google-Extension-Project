@@ -1,2 +1,8 @@
 # Google-Extension-Project
-A price search tool for e-commerce websites based on Google extension program --- 一个基于谷歌扩展程序的电商网站价格搜查工具
+A price search tool for e-commerce websites based on Google extension program.
+
+# Operation
+Log in to the website and select the corresponding book product. Click on the 4 required products, and the average value will be automatically calculated (see the code for other algorithm details) and copied to the clipboard
+
+# Warn
+This project is for learning and reference only, and commercial or illegal activities are strictly prohibited
