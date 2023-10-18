@@ -48,21 +48,21 @@ function getPrice(){
    
       function tect2(){
         
-        var lu = '鲁安格斯'
-        var da = '大喜阅'
-        var yi = '栾奕崇光'
-        var ai = '埃利奥'
-        var meng = '亿梦春田'
-        var shi = '鲁是特'
-        var zong = '纵列風'
-        var ling = '灵感飞驰'
-        var jing = '靖鮟大君'
-        var jian = '鍵の君'
-        var tian = '卖家超过10天未登录'
+        var lu = '店名1'
+        var da = '店名2'
+        var yi = '店名3'
+        var ai = '店名4'
+        var meng = '店名5'
+        var shi = '店名6'
+        var zong = '店名7'
+        var ling = '店名8'
+        var jing = '店名9'
+        var jian = '店名10'
+        var tian = 'The seller has not logged in for more than 10 days'
         var elements = document.querySelectorAll("#listBox > div:nth-child(n) > div.item-info > div.info-bottom-box > div.user-info > div:nth-child(1) > a.user-info-link > span")
         elements.forEach((shop) => { 
           if (shop.innerHTML.includes(lu) || shop.innerHTML.includes(da) || shop.innerHTML.includes(yi) || shop.innerHTML.includes(ai) || shop.innerHTML.includes(meng) || shop.innerHTML.includes(shi) || shop.innerHTML.includes(zong) || shop.innerHTML.includes(ling) || shop.innerHTML.includes(jing) || shop.innerHTML.includes(jian) || shop.innerHTML.includes(tian)) {
-            console.log("黄色")
+            console.log("yellow")
             shop.style.backgroundColor = "yellow";
           }
         })
@@ -162,8 +162,8 @@ chrome.runtime.onMessage.addListener(function(message, sender, sendResponse) {
     chrome.notifications.create({
       type: "basic",
       iconUrl: "hello_extensions.png",
-      title: "价格成功复制",
-      message: "请注意核实是否正确"
+      title: "Price successfully copied",
+      message: "Please check if it is correct"
     });
   }
 });
