@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "改价助手",
+  "version": "1.2.0",
+  "icons": {
+    "16": "hello_extensions.png",
+    "128": "hello_extensions.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  
+  "permissions": ["tabs","activeTab","windows","scripting","notifications"],
+
+  "action": {
+    "default_icon": "hello_extensions.png"
+  },
+
+  "host_permissions": [
+    "https://book.kongfz.com/*",
+    "https://search.kongfz.com/*"
+  ]
+ 
+}
